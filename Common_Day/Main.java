@@ -1,6 +1,6 @@
 package Common_Day;
 import java.util.*;
-
+// definig node structure..
 class Node{
     int data;
     Node next;
@@ -8,9 +8,11 @@ class Node{
         this.data=val;
     }
 }
-
+// linkedlist class holding various functions to perfom operations....
 class LinkedList{
     Node head=null;
+
+    // adding node at head.....
     void athead(int val){
         Node temp=new Node(val);
         if(head==null){head=temp;}
@@ -20,6 +22,20 @@ class LinkedList{
       }
     }
 
+    // Adding node at last node in linkedlist....
+    void attail(int val){
+        Node t=new Node(val);
+        if(head==null){head=t;}
+        else{
+            Node temp=head;
+            while(temp.next!=null){
+                temp=temp.next;
+            }
+            temp.next=t;
+        }
+    }
+
+    // display() is used to  traverse the linkedlist ...
     void display(){
         if(head==null)System.out.println("Hey this is empty linedlist .");
         else{
