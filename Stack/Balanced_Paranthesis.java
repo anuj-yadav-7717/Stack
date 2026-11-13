@@ -29,6 +29,7 @@ public class Balanced_Paranthesis {
         Scanner sc=new Scanner(System.in);
         System.out.print("enter your brackets : ");
         String s=sc.nextLine();
+        sc.close();
         System.out.println(checkParanthesis(s));
     }
     

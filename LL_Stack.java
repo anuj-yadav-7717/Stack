@@ -46,6 +46,7 @@ class Stack{
 public class LL_Stack{
     public static  void main(String args[]){
         Scanner sc=new Scanner(System.in);
+        sc.close();
         Stack st=new Stack();
         st.push(10);
         st.push(78);

@@ -52,7 +52,7 @@ public class Baseball {
             System.out.print("Enter: ");
             arr[i] = sc.nextLine().trim();
         }
-
+        sc.close();
         System.out.print("Your String is here: ");
         for (int i = 0; i < number; i++) {
             System.out.print(arr[i] + " ");

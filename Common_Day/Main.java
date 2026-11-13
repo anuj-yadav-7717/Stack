@@ -65,6 +65,7 @@ public class Main{
             l.athead(data);
             val--;
         }
+        sc.close();
         System.out.println("Your final LinkedList  is  given below : ");
         l.display();
         System.out.println("I am grateful for your efforts . ");
